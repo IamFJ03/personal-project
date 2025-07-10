@@ -466,8 +466,12 @@ footer .copyright {
   .logo {
     font-size: 1.5rem;
   }
+  .col-12{
+    text-align: center;
+  }
   .featurette-heading1{
     font-size: 2rem;
+    margin-left: 70px;
     margin-bottom: 25px;
   }
   .featurette-heading2{
