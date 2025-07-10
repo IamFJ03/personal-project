@@ -268,7 +268,7 @@
               " />
         </div>
         <div class="col-12">
-          <p class="fs-6 lead mt-3">
+          <p class="fs-6 fs-md-4 lead mt-4 px-4 px-md-5 py-3 py-md-4">
             <strong style="color: #000">Key Features :</strong><br />
             <strong style="color: #000">- Tool-free installation:</strong>
             Easy setup with snap-on clips<br />
@@ -343,7 +343,7 @@
               " />
         </div>
         <div class="col-12">
-          <p class="fs-6 lead mt-3">
+          <p class="fs-6 fs-md-4 lead mt-4 px-4 px-md-5 py-3 py-md-4">
             <strong style="color: #000">Key Features :</strong><br />
             <strong style="color: #000">- Multipurpose design:</strong>
             Suitable for kitchen, bathroom, pantry, office, or garage<br />
@@ -417,7 +417,7 @@
               " />
         </div>
         <div class="col-12">
-          <p class="fs-6 lead mt-3">
+          <p class="fs-6 fs-md-4 lead mt-4 px-4 px-md-5 py-3 py-md-4">
             <strong style="color: #000">Key Features :</strong><br />
             <strong style="color: #000">- Multipurpose design:</strong>
             Suitable for kitchen, bathroom, pantry, office, or garage<br />
@@ -491,7 +491,7 @@
               " />
         </div>
         <div class="col-12">
-          <p class="fs-6 lead mt-3">
+          <p class="fs-6 fs-md-4 lead mt-4 px-4 px-md-5 py-3 py-md-4">
             <strong style="color: #000">Key Features :</strong><br />
             <strong style="color: #000">- Multipurpose design:</strong>
             Suitable for kitchen, bathroom, pantry, office, or garage<br />
@@ -668,39 +668,45 @@
         <span class="copyright">Copyright © 2024 Sheen Industries. All rights reserved.</span>
       </div>
     </div>
-    <button class="btn walogo d-block d-md-none" id="whatsappBtnMobile" aria-label="Contact on WhatsApp">
-      <img src="./assets/images/WAlogo.png" alt="WhatsApp Mobile" loading="lazy" />
-    </button>
+    <!-- Mobile WhatsApp Direct Link -->
+<a href="https://wa.me/917066600054" id="whatsappMobileBtn" class="btn walogo d-md-none" target="_blank" aria-label="Chat on WhatsApp">
+  <img src="./assets/images/WAlogo.png" alt="WhatsApp Mobile" loading="lazy" />
+</a>
 
-    <!-- Desktop Button -->
-    <button class="btn walogo d-none d-md-block" aria-label="Contact on WhatsApp" data-bs-toggle="modal"
-      data-bs-target="#exampleModal">
-      <img src="./assets/images/WAlogo.png" alt="WhatsApp Desktop" loading="lazy" />
-    </button>
+<!-- Desktop Modal Trigger Button -->
+<button class="btn walogo d-none d-md-block" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Contact on WhatsApp">
+  <img src="./assets/images/WAlogo.png" alt="WhatsApp Desktop" loading="lazy" />
+</button>
+
+
   </footer>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">
-            Contact us on WhatsApp
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <img src="./assets/images/QR.png" alt="WhatsApp QR Code" class="img-fluid" loading="lazy" />
-          <div class="fs-5 mt-2">
-            <img src="./assets/images/call.png" alt="Call" height="25" width="30" style="margin-right: -9px"
-              loading="lazy" />
-            +91 7066600054<br />
-            <img src="./assets/images/email.png" alt="Email" height="25" width="30" loading="lazy" />
-            numairsayed7@gmail.com
-          </div>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact us on WhatsApp</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body text-center">
+        <img src="./assets/images/QR.png" alt="WhatsApp QR Code" class="img-fluid" loading="lazy" />
+        
+        <div class="fs-5 mt-3">
+          <img src="./assets/images/call.png" alt="Call" height="25" width="30" style="margin-right: -9px;" loading="lazy" />
+          +91 7066600054<br />
+          
+          <img src="./assets/images/email.png" alt="Email" height="25" width="30" style="margin-right: 5px;" loading="lazy" />
+          numairsayed7@gmail.com
         </div>
       </div>
+
     </div>
   </div>
+</div>
   <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>

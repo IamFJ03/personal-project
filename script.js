@@ -1,27 +1,21 @@
 // Helper function for querySelector
 function qs(selector, all = false) {
-  return all
-    ? document.querySelectorAll(selector)
-    : document.querySelector(selector);
+  return all ? document.querySelectorAll(selector) : document.querySelector(selector);
 }
 
 // Timeline scroll reveal logic
 const sections = qs(".section", true);
 const timeline = qs(".timeline");
 let prevScrollY = window.scrollY;
-let up, down;
-let full = false;
-let set = 0;
-const targetY = window.innerHeight * 0.8;
+let targetY = window.innerHeight * 0.8;
 
-function scrollHandler(e) {
-  const { scrollY } = window;
-  up = scrollY < prevScrollY;
-  down = !up;
+function scrollHandler() {
+  const scrollY = window.scrollY;
+  const up = scrollY < prevScrollY;
 
   const timelineRect = timeline.getBoundingClientRect();
   const dist = targetY - timelineRect.top;
-  console.log(dist);
+  console.log("Timeline distance from target:", dist);
 
   sections.forEach((item) => {
     const rect = item.getBoundingClientRect();
@@ -32,7 +26,7 @@ function scrollHandler(e) {
     }
   });
 
-  prevScrollY = window.scrollY;
+  prevScrollY = scrollY;
 }
 
 // Initial check and scroll binding
@@ -41,18 +35,14 @@ window.addEventListener("scroll", scrollHandler);
 
 // WhatsApp Button Logic
 document.addEventListener("DOMContentLoaded", function () {
-  const whatsappBtn = document.getElementById("whatsappBtn");
+  const mobileBtn = document.getElementById("whatsappBtnMobile");
 
-  if (whatsappBtn) {
-    whatsappBtn.addEventListener("click", function (event) {
-      const isMobile = window.innerWidth < 768;
-
-      if (isMobile) {
-        event.preventDefault();
-        event.stopPropagation();
-        window.open("https://wa.me/917066600054", "_blank"); // Replace with your number
-      }
-      // Desktop: Bootstrap modal will open via data attributes
+  if (mobileBtn) {
+    mobileBtn.addEventListener("click", function () {
+      // Direct WhatsApp chat on mobile
+      window.open("https://wa.me/917066600054", "_blank");
     });
   }
+
+  // No JS needed for desktop modal button — Bootstrap handles it via data attributes
 });
