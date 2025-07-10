@@ -466,6 +466,15 @@ footer .copyright {
   .logo {
     font-size: 1.5rem;
   }
+  .featurette-heading1{
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+  .featurette-heading2{
+    margin-top: 50px;
+    font-size: 2rem;
+    margin-left: 25%;
+  }
   .bd-carousal-img{
     width: 90%;
     height: 100%;
@@ -584,7 +593,16 @@ footer .copyright {
     position: absolute;
     z-index: 10;
   }
-
+  .featurette-heading1{
+    margin-top: 50px;
+    margin-left: 5%;
+    font-size: 2.5rem;
+  }
+  .featurette-heading2{
+    margin-top: 50px;
+    font-size: 2.5rem;
+    margin-left: 45%;
+  }
   .carousel-caption h1,
   .display-2 {
     font-size: 3rem;
